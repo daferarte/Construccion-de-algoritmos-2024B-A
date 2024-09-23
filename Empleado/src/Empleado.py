@@ -7,7 +7,7 @@ __email__ = "daniel.arteagafajar@campusucc.edu.co"
 # Importaciones
 ----------------------------------------------------------------'''
 
-#from Fecha import Fecha
+from .Fecha import Fecha
 
 class Empleado:
     # Aquí inicia mi clase
@@ -30,8 +30,8 @@ class Empleado:
     # Asociaciones
     --------------------------------------------------------------#'''
     
-    # fechaNacimiento = Fecha()
-    # fechaIngreso = Fecha()
+    fechaNacimiento = Fecha()
+    fechaIngreso = Fecha()
     
     '''#-------------------------------------------------------------
     # Constructor
@@ -107,20 +107,20 @@ class Empleado:
         # forma 2
         return self.DarSalario()*0.19
     
-    # __method__ = 'DarFechaIngreso'
-    # __params__ = 'Ninguno'
-    # __returns__ = 'Fecha de ingreso'
-    # __descriptions__ = 'Muestra la fecha de ingreso del empleado'
-    # def DarFechaIngreso(self):
-    #     # Aqui inicia el metodo
-    #     return self.fechaIngreso.DarFecha()
+    __method__ = 'DarFechaIngreso'
+    __params__ = 'Ninguno'
+    __returns__ = 'Fecha de ingreso'
+    __descriptions__ = 'Muestra la fecha de ingreso del empleado'
+    def DarFechaIngreso(self):
+        # Aqui inicia el metodo
+        return self.fechaIngreso.DarFecha()
     
-    # __method__ = 'DarFechaNacimiento'
-    # __params__ = 'Ninguno'
-    # __returns__ = 'Fecha de nacimiento'
-    # __descriptions__ = 'Muestra la fecha de nacimiento del empleado'
-    # def DarFechaNacimiento(self):
-    #     # Aqui inicia el metodo
-    #     return 'Tu fecha de nacimiento es: '+self.fechaNacimiento.DarFecha()
+    __method__ = 'DarFechaNacimiento'
+    __params__ = 'Ninguno'
+    __returns__ = 'Fecha de nacimiento'
+    __descriptions__ = 'Muestra la fecha de nacimiento del empleado'
+    def DarFechaNacimiento(self):
+        # Aqui inicia el metodo
+        return 'Tu fecha de nacimiento es: '+self.fechaNacimiento.DarFecha()
     
     
