@@ -4,7 +4,7 @@ __version__ = "1.0.0"
 __email__ = "daniel.arteagafajar@campusucc.edu.co"
 
 import constantes
-
+from Tipo import Tipo
 class Producto:
     
     """----------------------------------------------------------------
@@ -28,7 +28,7 @@ class Producto:
         self.__valorUnitario = nValorUnitario
         self.__subsidiado = nSubsidiado
         self.__calidad = nCalidad
-        
+        self.___tipoVenta = Tipo.FARMACIA
         
         
         """----------------------------------------------------------------
@@ -42,4 +42,4 @@ class Producto:
         # self.__precio = self.__precio + (self.__precio * self.IVA_SUPERMERCADO)
         # self.__precio = self.__precio + (self.__precio * constantes.IVA_SUPERMERCADO)
         
-        self.__precio += (self.__precio * constantes.IVA_SUPERMERCADO)
+        self.__precio = self.__valorUnitario+(self.__valorUnitario * constantes.IVA_SUPERMERCADO)
