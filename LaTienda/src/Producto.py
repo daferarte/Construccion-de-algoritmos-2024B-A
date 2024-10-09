@@ -85,3 +85,44 @@ class Producto:
         # self.__precio = self.__precio + (self.__precio * constantes.IVA_SUPERMERCADO)
         
         self.__precio = self.__valorUnitario+(self.__valorUnitario * constantes.IVA_SUPERMERCADO)
+        
+    __method__='DarPublicidad'
+    __params__='Ninguno'
+    __returns__='la publicidad de un producto'
+    __descriptions__='Este metodo permite mostrar el nombre y el precio de un valor con un mensaje publicitario'
+    def DarPublicidad(self):
+        
+        #return "Compre el producto "+self.__nombre+" por solo $"+self.__valorUnitario
+    
+        return f'Compre el producto {self.__nombre} por solo ${self.__valorUnitario}'
+    
+    __method__='EsIgual'
+    __params__='Producto Buscado'
+    __returns__='Si es el producto o no es el producto'
+    __descriptions__='Este metodo permite comparar el parametro ingresado con el producto y verificar si es el mismo producto'
+    def DarPublicidad(self, productoBuscado):
+        return self.__nombre is productoBuscado
+    
+    __method__='Vender'
+    __params__='cantidad a vender'
+    __returns__='Nada'
+    __descriptions__='Este metodo permite vender la cantidad digitada de producto'
+    def Vender(self, cantidad):
+        self.__cantidadBodega = self.__cantidadBodega - cantidad
+    
+    __method__='AgregarNuevaUnidadBodega'
+    __params__='Ninguno'
+    __returns__='Nada'
+    __descriptions__='Este metodo permite Agregar un producto en bodega'
+    def AgregarNuevaUnidadBodega(self):
+        self.__cantidadBodega+=1
+        
+    
+    __method__='Pedir'
+    __params__='Cantidad pedido'
+    __returns__='Nada'
+    __descriptions__='Este metodo permite realizar un pedido de un producto'
+    def Pedir(self, cantidad):
+        self.__cantidadBodega += cantidad
+        #self.__cantidadBodega = self.__cantidadBodega+cantidad
+    
