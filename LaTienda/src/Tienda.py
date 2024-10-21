@@ -26,10 +26,18 @@ class Tienda:
         self.__producto4 = None
         
         self.__dineroCaja:float = 0
+        
+        self.productosDefecto()
     
     """----------------------------------------------------------------
     # Metodos
     ----------------------------------------------------------------"""
+    def productosDefecto(self):
+        self.__producto1 = Producto("Jabon", Tipo.SUPERMERCADO, 1500.0, 100, False, 'E')
+        self.__producto2 = Producto("Lapiz", Tipo.PAPELERIA, 1000.0, 100, False, 'E')
+        self.__producto3 = Producto("Libreta", Tipo.PAPELERIA, 5500.0, 100, False, 'E')
+        self.__producto4 = Producto("Acetaminofen", Tipo.FARMACIA, 800.0, 100, True, 'E')
+    
     __method__='Producto1'
     __params__='nombre, tipo, nValorUnitario:float, cantidadBodega, nSubsidiado:bool, nCalidad'
     __returns__='Ninguna'
