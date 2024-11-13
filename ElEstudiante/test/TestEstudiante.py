@@ -1,6 +1,7 @@
 import pytest
 from ElEstudiante.src.Estudiante import Estudiante
-from ElEstudiante.src.Curso import Curso, Departamento
+from ElEstudiante.src.Curso import Curso
+from ElEstudiante.src.Departamento import Departamento
 
 class TestEstudiante:
 
